@@ -22,3 +22,57 @@ header h2 {
   font-weight: 700;
 }
 
+/* Container */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.not-found {
+  display: flex;
+}
+
+/* Image */
+
+.image img {
+  width: 450px;
+  height: 400px;
+  margin-left: 77px;
+}
+
+/* Textos */
+.textos {
+  font-family: 'Space Mono', monospace;
+  justify-content: center;
+  align-content: center;
+  margin-left: 118px;
+  margin-right: 197px;
+}
+
+
+.textos h1 {
+  font-size: 40px;
+  color: #333333;
+}
+
+.textos p {
+  margin-top: 36px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #4F4F4F;
+}
+
+.textos button {
+  margin-top: 64px;
+  background: #333333;
+  font-family: 'Sape', monospace;
+  width: 216px;
+  height: 68px;
+  color: #fff;
+
+  font-weight: bold;
+  font-size: 14px;
+}
