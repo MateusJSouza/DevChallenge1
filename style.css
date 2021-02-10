@@ -6,73 +6,120 @@ font-family: 'Space Mono', monospace; */
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  font: inherit;
+  color: inherit;
 }
 
 body {
-  background: #fff;
+  padding: 0;
+  margin: 0;
 }
 
-header h2 {
-  font-family: 'Inconsolata', monospace;
-  margin-top: 40px;
-  margin-left: 77px;
+p {
+  max-width: 600px;
+}
+
+header {
+  margin: 40px 77px;
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: bold;
   font-size: 24px;
-  font-weight: 700;
+  text-transform: uppercase;
 }
 
-/* Container */
+#container {
+  max-width: 1200px;
+  margin: 0 auto;
 
-.container {
-  width: 100vw;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   height: 100vh;
+}
+
+main {
   display: flex;
   align-items: center;
 }
 
-.not-found {
-  display: flex;
+.main--content {
+  flex: 1;
 }
 
-/* Image */
+.headline {
+  width: 600px;
+  height: 190px;
 
-.image img {
-  width: 450px;
-  height: 400px;
-  margin-left: 77px;
-}
-
-/* Textos */
-.textos {
-  font-family: 'Space Mono', monospace;
-  justify-content: center;
-  align-content: center;
-  margin-left: 118px;
-  margin-right: 197px;
-}
-
-
-.textos h1 {
-  font-size: 40px;
   color: #333333;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 95px;
+
+  margin: 0;
+  padding: 0;
 }
 
-.textos p {
-  margin-top: 36px;
+.description { 
+  width: 400px;
+  height: 108px;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
   font-size: 24px;
-  font-weight: 400;
+  line-height: 36px;
   color: #4F4F4F;
+
+
+  padding: 0;
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 40px;
 }
 
-.textos button {
-  margin-top: 64px;
+.button {
   background: #333333;
-  font-family: 'Sape', monospace;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Space Mono;
+  border: none;
+
   width: 216px;
   height: 68px;
-  color: #fff;
+  margin: 0;
+  padding: 0;
+}
 
-  font-weight: bold;
-  font-size: 14px;
+.main-img {
+  flex: 1;
+}
+
+.main-img img {
+  max-width: 500px;
+  max-height: 400px;
+}
+
+footer {
+
+  display: flex;
+  align-items: center;
+  color: #bdbdbd;
+}
+
+.socials {
+  margin-right: 40px;
+}
+
+.socials--item {
+  margin-right: 12px;
+}
+
+.socials--item:hover {
+  color: #333;
+}
+
+span {
+  font-size: 18px;
+  font-family: Space Mono;
 }
