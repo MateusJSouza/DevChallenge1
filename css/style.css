@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700&family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700&family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 /* font-family: 'Inconsolata', monospace;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Space Mono', monospace; */
-
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font: inherit;
   color: inherit;
 }
@@ -28,40 +27,53 @@ header {
   text-transform: uppercase;
 }
 
-#container {
-  max-width: 1200px;
-  margin: 0 auto;
+.border {
+  border: 2px solid red;
+}
 
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+#container {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100vh;
 }
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main--content {
-  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 40px;
 }
 
 .headline {
   width: 600px;
   height: 190px;
-
   color: #333333;
   font-family: Space Mono;
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
   line-height: 95px;
-
   margin: 0;
   padding: 0;
 }
 
-.description { 
+.description {
   width: 400px;
   height: 108px;
   font-family: Space Mono;
@@ -70,8 +82,6 @@ main {
   font-size: 24px;
   line-height: 36px;
   color: #4F4F4F;
-
-
   padding: 0;
   margin: 0;
   margin-top: 24px;
@@ -84,7 +94,6 @@ main {
   text-transform: uppercase;
   font-family: Space Mono;
   border: none;
-
   width: 216px;
   height: 68px;
   margin: 0;
@@ -92,7 +101,9 @@ main {
 }
 
 .main-img {
-  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .main-img img {
@@ -101,9 +112,13 @@ main {
 }
 
 footer {
-
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #bdbdbd;
 }
 
@@ -123,3 +138,4 @@ span {
   font-size: 18px;
   font-family: Space Mono;
 }
+/*# sourceMappingURL=style.css.map */
